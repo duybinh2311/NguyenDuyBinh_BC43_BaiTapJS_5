@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 5</title>
+
+    <!-- BootsTrap v5.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css"
+      integrity="sha512-72OVeAaPeV8n3BdZj7hOkaPSEk/uwpDkaGyP4W2jSzAC8tfiO4LMEDWoL3uFp5mcZu+8Eehb4GhZWFwvrss69Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="layout my-5">
+      <div class="container">
+        <!-- Bài Tập 1 -->
+        <div class="card mb-4">
+          <div class="card-header my-2">
+            <h2>Bài Tập 1: Quản Lý Tuyển Sinh</h2>
+          </div>
+          <div class="card-body row gap-2">
+            <input
+              type="number"
+              placeholder="Điểm Chuẩn"
+              class="form-control col"
+              id="diemChuan"
+            />
+            <select class="form-control col" id="khuVuc">
+              <option value="0">Chọn Khu Vực</option>
+              <option value="2">Khu Vực A</option>
+              <option value="1">Khu Vực B</option>
+              <option value="0.5">Khu Vực C</option>
+            </select>
+            <select class="form-control col" id="doiTuong">
+              <option value="0">Chọn Đối Tượng</option>
+              <option value="2.5">Đối Tượng 1</option>
+              <option value="1.5">Đối Tượng 2</option>
+              <option value="1">Đối Tượng 3</option>
+            </select>
+            <input
+              type="number"
+              placeholder="Điểm Môn Thứ 1"
+              class="form-control col"
+              id="diemMon1"
+            />
+            <input
+              type="number"
+              placeholder="Điểm Môn Thứ 2"
+              class="form-control col"
+              id="diemMon2"
+            />
+            <input
+              type="number"
+              placeholder="Điểm Môn Thứ 3"
+              class="form-control col"
+              id="diemMon3"
+            />
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-success" id="btn-bai-1">Tính Điểm</button>
+            <div class="alert alert-success my-2" id="ket-qua-bai-1"></div>
+          </div>
+        </div>
+
+        <!-- Bài tập 2 -->
+        <div class="card mb-4">
+          <div class="card-header my-2">
+            <h2>Bài Tập 2: Tính Tiền Điện</h2>
+          </div>
+          <div class="card-body row gap-2">
+            <input
+              type="text"
+              placeholder="Nhập họ và tên"
+              class="form-control col"
+              id="hoVaTen"
+            />
+            <input
+              type="number"
+              placeholder="Nhập số kw"
+              class="form-control col"
+              id="soKw"
+            />
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-primary" id="btn-bai-2">
+              Tính Tiền Điện
+            </button>
+            <div class="alert alert-primary my-2" id="ket-qua-bai-2"></div>
+          </div>
+        </div>
+
+        <!-- Bài tập 3 -->
+        <div class="card mb-4">
+          <div class="card-header my-2">
+            <h2>Bài Tập 3: Tính Thuế Thu Nhập Cá Nhân</h2>
+          </div>
+          <div class="card-body row gap-2">
+            <input
+              type="text"
+              placeholder="Nhập họ và tên"
+              class="form-control col"
+              id="hoVaTen-2"
+            />
+            <input
+              type="number"
+              placeholder="Tổng thu nhập năm"
+              class="form-control col"
+              id="thuNhapNam"
+            />
+            <input
+              type="number"
+              placeholder="Số người phụ thuộc"
+              class="form-control col"
+              id="nguoiPhuThuoc"
+            />
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-dark" id="btn-bai-3">
+              Tính Thuế Thu Nhập Cá Nhân
+            </button>
+            <div class="alert alert-dark my-2" id="ket-qua-bai-3"></div>
+          </div>
+        </div>
+
+        <!-- Bài tập 4 -->
+        <div class="card mb-4">
+          <div class="card-header my-2">
+            <h2>Bài Tập 4: Tính Tiền Cáp</h2>
+          </div>
+          <div class="card-body row gap-2">
+            <select id="chonKhachHang" class="form-control col">
+              <option value="">Chọn Loại Khách Hàng</option>
+              <option value="nhaDan">Khách Hàng Nhà Dân</option>
+              <option value="doanhNghiep">Khách Hàng Doanh Nghiệp</option>
+            </select>
+            <input type="number" class="form-control col" placeholder="Nhập Mã Khách Hàng" id="maKhachHang">
+            <input type="number" class="form-control col" placeholder="Số Kênh Cao Cấp" id="soKenhCaoCap">
+            <input type="number" class="form-control col d-none" placeholder="Nhập Số Đầu Kết Nối" id="soDauKetNoi">
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-danger" id="btn-bai-4">
+              Tính Tiền Cáp
+            </button>
+            <div class="alert alert-danger my-2" id="ket-qua-bai-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Js -->
+    <script src="./main.js"></script>
+  </body>
+</html>
