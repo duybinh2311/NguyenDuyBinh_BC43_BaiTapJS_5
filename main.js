@@ -76,22 +76,22 @@ document.getElementById('btn-bai-3').onclick = function () {
       thueThuNhapCaNhan = thuNhapChiuThue * 0.05
       break
     case thuNhapChiuThue <= 120e6:
-      thueThuNhapCaNhan = thuNhapChiuThue * 0.1
+      thueThuNhapCaNhan = thuNhapChiuThue * 0.1 - 3e6
       break
     case thuNhapChiuThue <= 210e6:
-      thueThuNhapCaNhan = thuNhapChiuThue * 0.15
+      thueThuNhapCaNhan = thuNhapChiuThue * 0.15 - 9e6
       break
     case thuNhapChiuThue <= 384e6:
-      thueThuNhapCaNhan = thuNhapChiuThue * 0.2
+      thueThuNhapCaNhan = thuNhapChiuThue * 0.2 - 19.5e6
       break
     case thuNhapChiuThue <= 624e6:
-      thueThuNhapCaNhan = thuNhapChiuThue * 0.25
+      thueThuNhapCaNhan = thuNhapChiuThue * 0.25 - 38.7e6
       break
     case thuNhapChiuThue <= 960e6:
-      thueThuNhapCaNhan = thuNhapChiuThue * 0.3
+      thueThuNhapCaNhan = thuNhapChiuThue * 0.3 - 69.9e6
       break
     case thuNhapChiuThue > 960e6:
-      thueThuNhapCaNhan = thuNhapChiuThue * 0.35
+      thueThuNhapCaNhan = thuNhapChiuThue * 0.35 - 117.9e6
       break
   }
 
